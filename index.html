@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="Pendreagon503" content="">
+  <meta name="Pendragon503" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/png" href="/assets/images/logoico.ico">
   <link rel="shortcut icon" type="image/x-icon" href="/assets/images/logoico.ico">
@@ -30,8 +30,21 @@
 
 -->
 </head>
+<script type='text/javascript'>
+  document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+  }, false);
+
+  document.addEventListener("copy", function (event) {
+    // Change the copied text if you want
+    event.clipboardData.setData("text/plain", "No se permite copiar en esta página web");
+    // Prevent the default copy action
+    event.preventDefault();
+  }, false);
+</script>
 
 <body>
+
 
   <!-- ***** Preloader Start ***** -->
   <!---->
@@ -63,7 +76,8 @@
               <li><a href="index.html" class="active">Inicio</a></li>
               <li><a href="explore.html">Explorar</a></li>
               <li><a href="details.html">Conocenos</a></li>
-              <li><a href="create.html">Descargar</a></li>
+              <li><a href="#" target="_blank">Modo Web</a></li>
+              <li><a href="#">Descargar</a></li>
 
             </ul>
             <a class='menu-trigger'>
