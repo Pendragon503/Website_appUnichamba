@@ -44,8 +44,23 @@
 </script>
 
 <body>
-
+  <script >
+    var sonido = new Audio();
+    sonido.src="assets/spot/1.mp3";
+    
+    </script>
+    <script >
+      var sonido2 = new Audio();
+      sonido2.src="assets/spot/innovacion.mp3";
+      
+      </script>
+   <script >
+    var sonido3 = new Audio();
+    sonido3.src="assets/spot/Doorbell.mp3";
+    
+    </script>   
   <!-- ***** Preloader Start ***** -->
+  <!---->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -65,8 +80,8 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="">
+            <a class="logo">
+              <img onmousedown="sonido2.play()"src="assets/images/logo.png" alt="">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -74,8 +89,8 @@
               <li><a href="index.html">Inicio</a></li>
               <li><a href="explore.html" class="active">Explorar</a></li>
               <li><a href="details.html">Conocenos</a></li>
-              <li><a href="https://unichamba.com" target="_blank">Modo Web</a></li>
-              <li><a href="#">Descargar</a></li>
+              <li><a onmousedown="sonido3.play()"href="https://unichamba.com" target="_blank">Modo Web</a></li>
+              <li><a onmousedown="sonido.play()"href="https://play.google.com/store/apps/details?id=com.atrasvasolo&pcampaignid=web_share"target="_blank">Descargar</a></li>
 
             </ul>
             <a class='menu-trigger'>

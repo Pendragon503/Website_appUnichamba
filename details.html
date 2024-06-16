@@ -44,8 +44,24 @@
 </script>
 
 <body>
-
+  <script >
+    var sonido = new Audio();
+    sonido.src="assets/spot/1.mp3";
+    
+    </script>
+    <script >
+      var sonido2 = new Audio();
+      sonido2.src="assets/spot/innovacion.mp3";
+      
+      </script>
+  <script >
+    var sonido3 = new Audio();
+    sonido3.src="assets/spot/Doorbell.mp3";
+    
+    </script>
+      
   <!-- ***** Preloader Start ***** -->
+  <!---->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -65,8 +81,8 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="">
+            <a class="logo">
+              <img onmousedown="sonido2.play()"src="assets/images/logo.png" alt="">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -74,8 +90,8 @@
               <li><a href="index.html">Inicio</a></li>
               <li><a href="explore.html">Explorar</a></li>
               <li><a href="details.html" class="active">Conocenos</a></li>
-              <li><a href="https://unichamba.com/" target="_blank">Modo Web</a></li>
-              <li><a href="#">Descargar</a></li>
+              <li><a onmousedown="sonido3.play()"href="https://unichamba.com/" target="_blank">Modo Web</a></li>
+              <li><a onmousedown="sonido.play()"href="https://play.google.com/store/apps/details?id=com.atrasvasolo&pcampaignid=web_share"target="_blank">Descargar</a></li>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -96,10 +112,10 @@
           <span> <a href="#">UnichambaApp</a></span>
           <div class="buttons">
             <div class="main-button">
-              <a href="#">Descargar App</a>
+              <a onmousedown="sonido.play()"href="https://play.google.com/store/apps/details?id=com.atrasvasolo&pcampaignid=web_share"target="_blank">Descargar App</a>
             </div>
             <div class="border-button">
-              <a href="https://unichamba.com/" target="_blank">Usar en modo Web</a>
+              <a onmousedown="sonido3.play()"href="https://unichamba.com/" target="_blank">Usar en modo Web</a>
             </div>
           </div>
         </div>
@@ -281,7 +297,166 @@
       </div>
     </div>
   </div>
+  <div class="item-details-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2>Detalles sobre <em>Unichamba Web</em></h2>
+          </div>
+        </div>
+        <div class="author-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="author">
+                  <img src="assets/images/Ing/IngCalde.png" alt="" style="border-radius: 50%; max-width: 170px;">
+                  <h4>Alexander Calderon <br> <a href="https://www.facebook.com/alexander.calderon.900/">Catedratico UES
+                    FMOCC</a></h4>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                    <p>Me complace anunciar que, además de la innovadora aplicación móvil creada con Kotlin, nuestros talentosos
+                      estudiantes han desarrollado una versión web de la misma. <br>Utilizando Node.js para el backend, JavaScript y
+                      React para el frontend, y Tailwind CSS para el diseño, han creado una plataforma robusta y accesible desde
+                      cualquier dispositivo.<br>
+                      Este proyecto refleja su dominio de tecnologías avanzadas y su compromiso con la comunidad estudiantil.<br>
+                      Estoy muy orgulloso de su dedicación y los logros obtenidos.<br>
+                      Usa nuestros servicios con Unichamba!!<br> Sigamos fomentando la innovación y la excelencia.</p>
+                    <form class="buttons">
+                      <div class="main-button">
+                        <a href="#">Descargar</a>
+                      </div>
+                    </form>
+              </div>
+              </div>
+          </div>
+        </div>       
+        <div class="col-lg-12">
+          <div class="current-bid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="mini-heading">
+                  <h4>Nuestro Equipo de Desarrolladores</h4>
+                </div>
+              </div>
+              <div class="col-lg-6">
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="left-img">
+                    <img src="assets/images/DesarroladoresWeb/Eli.png" alt="">
+                  </div>
+                  <div class="right-content">
+                    <h4>Elias<br>Ronquillo</h4>
+                    <a href="https://www.facebook.com/pablo.ronquillo.7524?mibextid=ZbWKwL">Contactar</a>
+                    <div class="line-dec"></div>
+                    <h6>Desarrollador web</em></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="left-img">
+                    <img src="assets/images/DesarroladoresWeb/Ani.png" alt="">
+                  </div>
+                  <div class="right-content">
+                    <h4>Gerardo<br>Chávez</h4>
+                    <a href="https://www.facebook.com/anibal.chavez.1293575?mibextid=ZbWKwL">Contactar</a>
+                    <div class="line-dec"></div>
+                    <h6>Desarrollador Web</em></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="left-img">
+                    <img src="assets/images/DesarroladoresWeb/Rab.png" alt="">
+                  </div>
+                  <div class="right-content">
+                    <h4>Rabindranath<br>Rodríguez</h4>
+                    <a href="https://www.facebook.com/rabindranath.carcamo.3?locale=es_LA">Contactar</a>
+                    <div class="line-dec"></div>
+                    <h6>Desarrollador web</em></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="left-img">
+                    <img src="assets/images/DesarroladoresWeb/Ken.png" alt="">
+                  </div>
+                  <div class="right-content">
+                    <h4>Kendall<br>Cárcamo</h4>
+                    <a href="https://www.facebook.com/kendall.carcamo.5">Contactar</a>
+                    <div class="line-dec"></div>
+                    <h6>Desarrollador Web</em></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="left-img">
+                    <img src="assets/images/DesarroladoresWeb/Ger.png" alt="">
+                  </div>
+                  <div class="right-content">
+                    <h4>Gerardo<br>Marroquín </h4>
+                    <a href="https://www.facebook.com/gjose.alvarado.7?mibextid=ZbWKwL">Contactar</a>
+                    <div class="line-dec"></div>
+                    <h6>Desarrollador Web</em></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="left-img">
+                    <img src="assets/images/DesarroladoresWeb/Elvis.png" alt="">
+                  </div>
+                  <div class="right-content">
+                    <h4>Elvis<br>Baños </h4>
+                    <a href="https://www.facebook.com/elvis.banos.14?mibextid=kFxxJD">Contactar</a>
+                    <div class="line-dec"></div>
+                    <h6>Desarrollador Web</em></h6>
 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="left-img">
+                    <img src="assets/images/DesarroladoresWeb/Sam.png" alt="">
+                  </div>
+                  <div class="right-content">
+                    <h4> Samuel<br>Pacheco</h4>
+                    <a href="#">Contactar</a>
+                    <div class="line-dec"></div>
+                    <h6>Desarrollador Web</em></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="left-img">
+                    <img src="assets/images/DesarroladoresWeb/Ari.png" alt="">
+                  </div>
+                  <div class="right-content">
+                    <h4>Angel<br>Alvarado </h4>
+                    <a href="https://www.facebook.com/profile.php?id=100088514155495">Contactar</a>
+                    <div class="line-dec"></div>
+                    <h6>Desarrollador Web</em></h6>
+                  </div>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="create-nft">
     <div class="container">
       <div class="row">
